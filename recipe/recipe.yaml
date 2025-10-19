@@ -10,7 +10,7 @@ source:
   sha256: 943aad8a5fc359cc6a4d24e6fc803536fe038cc6a5699d095842b4207cb12fce
 
 build:
-  number: 0
+  number: 1
   script:
     - go-licenses save ./cmd/jjui --save_path=license-files --ignore github.com/mattn/go-localereader
     - if: unix
