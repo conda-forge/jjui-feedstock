@@ -1,5 +1,5 @@
 context:
-  version: "0.9.6"
+  version: "0.9.7"
 
 package:
   name: jjui
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/idursun/jjui/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 7e739c8cad3362d18e83d60458cb594a5851e3543607d90b9dd071a4c479c430
+  sha256: ba400c7c7fa6ea490ba271895cc8aabba409004b690040f8de69fe625e09b546
 
 build:
   number: 0
