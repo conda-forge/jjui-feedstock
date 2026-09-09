@@ -12,7 +12,7 @@ source:
 build:
   number: 0
   script:
-    - go-licenses save ./cmd/jjui --save_path=license-files --ignore github.com/mattn/go-localereader
+    - go-licenses save ./cmd/jjui --save_path=license-files --ignore github.com/mattn/go-localereader --ignore github.com/alecthomas/chroma/v2
     - if: unix
       then: |
         go build -v -ldflags="-s -w" -o $PREFIX/bin/jjui ./cmd/jjui
