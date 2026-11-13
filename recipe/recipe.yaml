@@ -1,5 +1,5 @@
 context:
-  version: "0.10.12"
+  version: "0.10.13"
 
 package:
   name: jjui
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/idursun/jjui/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 736692b7ee62ba7a4f368868f690bdccca62bcfaf7f6b79acd9e364b75055dc2
+  sha256: f1f68ab9431b1ddb2bd24db68735397167d590d6fcc66035056918b97b283089
 
 build:
-  number: 1
+  number: 0
   script:
     - go-licenses save ./cmd/jjui --save_path=license-files --ignore github.com/mattn/go-localereader --ignore github.com/alecthomas/chroma/v2
     - if: unix
